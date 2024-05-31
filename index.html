@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Research Work</title>
+</head>
+<body>
+    <header id = "header">
+        <div class="mark"><a href="index.html">Tatsuya NAKAGOMI</a></div>
+        <div class="sns">
+            <ul>
+                <li class = "linkedin"><a href="https://www.linkedin.com/in/tatsuya-nakagomi-9231a7239" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                <li class = "email"><a href="#"><i class='bx bxs-envelope'></i></a></li>
+                <li class = "github"><a href="#"><i class='bx bxl-github'></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="left">
+            <img src="./images/system.jpg" alt="system">
+        </div>
+        <div class="right">
+            <h5>Project</h5>
+            <h3>Research Project (Apr 2023 - Feb 2024)</h3>
+            <h5>A control program for rehabilitation training</h5>
+            <p>
+                I was dedicated to my research to help hemiplegia patients regain complex hand functions and return to their normal lives. To achieve this goal, I developed an efficient and meaningful rehabilitation training program using two sensors and a glove designed in my lab.
+                I connected the glove to two sensors to detect muscle contractions in the user's arm using C++, Windows API, Arduino R4, and the M5 Series. Additionally, I created a graphical user interface (GUI) from scratch to allow medical staff to easily adjust rehabilitation program settings.
+                During the testing phase, I investigated how effectively these tools aligned with users' motor intentions. Sensors were placed at specific points to measure muscle responses after movements of the thumb, index finger, and other fingers. The system achieved an accuracy of 70% to 90%, depending on the threshold settings, which ranged from 10% to 50% of each user's maximum muscle contraction.
+            </p>
+        </div>
+    </div>
+
+    <div class="system">
+        <h5>Overview</h5>
+        <h3>System Construction</h3>
+        <div class="items">
+            <div class="item">
+                <img src="./images/system/gui.PNG" alt="gui">
+                <div class="info">
+                    <h4>GUI</h4>
+                    <p>
+                        We can start rehabilitation training program using sensors and a glove.
+                        This GUI is made in C/C++ and Windows API.
+                    </p>
+                    <a href="./system/gui.html">Click for more information <i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/system/sensor.jpg" alt="sensor">
+                <div class="info">
+                    <h4>Sensor</h4>
+                    <p>
+                        I incorporated two different types of sensors into my rehabilitation program to detect user's motor intentions based on their muscle contractions.    
+                    </p>
+                    <a href="./system/sensor.html">Click for more information <i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/system/glove.jpg" alt="glove">
+                <div class="info">
+                    <h4>Glove</h4>
+                    <p>
+                        This was made in my lab primarily using 3D printers. There are threats to enable finger extensions and elastic springs on its back of hand to support finger flexion.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/system/control.jpg" alt="controller">
+                <div class="info">
+                    <h4>Control</h4>
+                    <p>
+                        This device can ajust the tension of the thread via CAN communication.
+                        This enables 9 different actions by 3 units for thumb, index fingers, and rest.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="result">
+        <h5>Result</h5>
+        <h3>Research Outcome</h3>
+        <div class="items">
+            <div class="item">
+                <div class="left">
+                    <img src="./result/images/figure1.png" alt="figure">
+                </div>
+                <div class="right">
+                    <h4>1. Control Program Assessment</h4>
+                    <div class="explain">
+                        <p>I showed one of three test results.</p>
+                    <p>
+                        I conducted an experiment with three participants, aged 21 and 22, to test the functionality of a control program. Each participant wore sensors on their arms and hands during the tests. The sensors were placed on the thumb, index finger, and the rest of the hand, and the test was repeated three times for each participant.
+                        The figure displays four sets of data. One of these datasets comes from a "Capacitance Sensor," which is attached to the tendon responsible for thumb extension. The orange, gray, and yellow lines represent the position of each thread.
+                        In this test, the thread positions move to the origin when the hand is fully flexed. I defined 80% muscle activation as the trigger point and 50% muscle activation as the endpoint, where the thread position is at the extension point.
+                        According to the graph, when the capacitance sensor detects more than 80% muscle contraction, the thread position moves to the maximum extension point controlled by the program and returns to the origin once the muscle contraction falls below 50%.
+                        This experiment verified that the control program functions correctly.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="twoItem">
+                <div class="left">
+                    <h4>2. Finger Movement Discrimination</h4>
+                    <div class="explain">
+                        <p>I showed one of three test results.</p>
+                        <p>
+                            Eight participants, aged 21 and 22, took part in the experiment. Each wore a Capacitance Sensor on the Extensor Pollicis Longus Tendon, which activates with thumb extensions, and two Muscle Sensors on the arm that respond to index and other finger extensions.
+                        </p>
+                        <p>
+                            Participants were instructed to move their index, thumb, or other fingers ten times in thirty trials. The accuracy of each action was then evaluated. The sensor for the index finger showed 90% accuracy, while the thumb and other fingers were below 80%.
+                        </p>
+                        <p>
+                            The lower accuracy for the thumb and other fingers was due to the arm sensor also detecting muscle contractions from the index finger. Additionally, the Capacitance Sensor on the Extensor Pollicis Longus Tendon was affected by the glove's mechanical design, reducing the accuracy of finger movement detection.
+                        </p>
+                        <p>
+                            Future improvements involve developing a new sensor, finding a position unaffected by the glove, or designing a new glove.
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Discrimination Assessment (50%)</p>
+                    <img src="./result/images/table1.jpg" alt="figure">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="resources">
+        <div class="items">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="./resources/reserachPaper.pdf" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Research Paper in Japanese</a></li>
+                <li><a href="https://moromugi-lab.r.chuo-u.ac.jp/research/" target="_blank"><i class="fa-solid fa-flask"></i> Lab</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="name">
+            <p><a href="#header"><span>Tatsuya NAKAGOMI</span> - the University of Sydney</a></p>
+        </div>
+        <div class="separate"></div>
+        <div class="items">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/tatsuya-nakagomi-9231a7239" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                <li><a href="#"><i class='bx bxs-envelope' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+            </ul>
+        </div>    
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/e22d55fef3.js" crossorigin="anonymous"></script>
+</body>
+</html>

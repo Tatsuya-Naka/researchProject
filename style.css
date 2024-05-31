@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Robot', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1c1e53;
+}
+
+li {
+    list-style: none;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #fff;
+    height: 80px;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+
+}
+
+header .mark {
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* header .mark a:hover {
+    color: cornflowerblue;
+} */
+
+header .sns {
+    margin: 40px;
+}
+
+header .sns ul {
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+header .sns ul li a:hover {
+    color: cornflowerblue;
+}
+
+.main {
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.main .left img {
+    width: 440px;
+    border-radius: 10px 10px 0 0;
+}
+
+.main .right h3,
+.system h3,
+.result h3{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.main .right p {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.system,
+.result {
+    padding: 110px;
+}
+
+
+.system .items .item h4,
+.result .items .item .right h4,
+.result .items .twoItem .left h4 {
+    font-size: 18px;
+}
+
+.system .items {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.system .items .item {
+    background-color: #fff;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    width: 25%;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.system .items .item:hover {
+    border-color: cornflowerblue;
+}
+
+.system .items .item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius:10px 10px 0px 0px;
+}
+
+.system .items .item .info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+
+.system .items .item .info p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.system .items .item .info a:hover {
+    color: cornflowerblue;
+}
+
+.system .items .item .info a i {
+    font-size: 16px;
+}
+
+.result .items .item, 
+.result .items .twoItem{
+    display: flex;
+    align-items: top;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.result .items .item .left img {
+    width: 650px;
+}
+
+.result .items .item .right,
+.result .items .twoItem .left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.result .items .item .right p,
+.result .items .twoItem .left p {
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.result .items .twoItem .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.result .items .twoItem .right p {
+    font-size: 16px;
+}
+
+.result .items .twoItem .right img {
+    width: 350px;
+}
+.resources {
+    padding: 110px;
+    overflow: hidden; 
+    /* fix the position */
+}
+
+.resources .items {
+    float: right;
+}
+
+.resources .items ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.resources .items ul li {
+    text-align: left;
+}
+
+.resources .items ul li a{
+    transition: all 0.3s ease;
+}
+
+.resources .items ul li a:hover {
+    color: cornflowerblue;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 110px;
+    background-color: #fff;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+footer .name p {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer .separate {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: 15px 0 15px;
+}
+
+footer .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .items ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .items ul li a {
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+footer .items ul li a:hover {
+    color: cornflowerblue;
+}

@@ -1,0 +1,168 @@
+@media screen and (max-width: 1200px) {
+    .main,
+    .system,
+    .result,
+    .resources {
+        padding: 75px 110px;
+    }
+
+    .main .left img {
+        width: 400px;
+    }
+    .main .top h5,
+    .system h5,
+    .result h5 {
+        font-size: 18px;
+    }
+
+    .main .top h3,
+    .system h3,
+    .result h3 {
+        font-size: 36px;
+    }
+
+    .main .right h5 {
+        font-size: 20px;
+    }
+
+    .main .right p {
+        font-size: 16px;
+    }
+
+    .system .items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .system .items .item {
+        width: 48%;
+    }
+
+    .result .items .item {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main .container {
+        flex-direction: column;
+    }
+
+    .main .left img {
+        width: 600px;
+    }
+
+    .main .top h5,
+    .system h5,
+    .result h5 {
+        font-size: 20px;
+    }
+
+    .system .items .item {
+        width: 80%;
+    }
+
+    .system .items .item h4 {
+        font-size: 20px;
+    }
+
+    .system .items .item img {
+        border-radius: 20px 20px 10px 10px;
+    }
+
+    .system .items .item .info p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .main .top h3,
+    .system h3,
+    .result h3 {
+        font-size: 30px;
+    }
+
+    .main .left img {
+        width: 440px;
+    }
+
+    .system .items .item {
+        width: 100%;
+    }
+
+    .result .items .item .left img {
+        width: 100%;
+    }
+
+    .result .items .item .right .explain p,
+    .result .items .twoItem .left p {
+        font-size: 14px;
+    }
+    .result .items .twoItem {
+        flex-direction: column;
+    }
+
+    .result .items .twoItem .right img {
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header .sns ul {
+        display: none;
+    }
+
+    header .sns {
+        margin: 0;
+    }
+    header .mark {
+        margin: 0 auto;
+    }
+
+    .main .top h3,
+    .system h3,
+    .result h3 {
+        font-size: 28px;
+    }
+
+    .main .right p {
+        font-size: 14px;
+    }
+
+    .main .left img {
+        width: 400px;
+    }
+
+    .main .right p {
+        font-size: 14px;
+    }
+
+    .result .items .item .right .explain p,
+    .result .items .twoItem .left p {
+        font-size: 12px;
+    }
+
+    .resources .items {
+        float: none;
+    }
+
+    footer {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .main,
+    .system,
+    .result,
+    .resources {
+        padding: 50px;
+    }
+
+    .main .left img {
+        width: 350px;
+    }
+}

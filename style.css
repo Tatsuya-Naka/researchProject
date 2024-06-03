@@ -63,9 +63,13 @@ header .sns ul li a:hover {
 
 .main {
     padding: 110px;
+}
+
+.main .container {
     display: flex;
     align-items: center;
     gap: 60px;
+    margin-top: 60px;
 }
 
 .main .left img {
@@ -73,15 +77,19 @@ header .sns ul li a:hover {
     border-radius: 10px 10px 0 0;
 }
 
-.main .right h3,
+.main .top h3,
 .system h3,
 .result h3{
     font-size: 40px;
     margin-top: 20px;
 }
 
+.main .right h5 {
+    font-size: 25px;
+}
+
 .main .right p {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 30px;
 }
 
@@ -89,7 +97,6 @@ header .sns ul li a:hover {
 .result {
     padding: 110px;
 }
-
 
 .system .items .item h4,
 .result .items .item .right h4,
@@ -172,7 +179,7 @@ header .sns ul li a:hover {
 .result .items .twoItem .right {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -213,11 +220,18 @@ header .sns ul li a:hover {
 }
 
 footer {
+    padding: 85px;
     display: flex;
     flex-direction: column;
-    padding: 50px 110px;
     background-color: #fff;
-    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+footer .name
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
 }
 
 footer .name p {
@@ -243,6 +257,7 @@ footer .items ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 footer .items ul li a {
